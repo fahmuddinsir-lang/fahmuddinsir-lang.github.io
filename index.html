@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kopi Nusantara</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- KERANJANG -->
+<div id="cart">
+    <h3>Keranjang Belanja</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">Rp 0</span></p>
+    <button id="checkout">Checkout</button>
+    <button id="close-cart">Tutup</button>
+</div>
+
+<button id="open-cart" data-count="0">🛒</button>
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <h1>☕ Kopi Nusantara</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Nikmati Aroma Kopi Terbaik Indonesia</h2>
+    <p>Kopi fresh roasted dari petani lokal</p>
+    <a href="#produk" class="btn">Lihat Produk</a>
+</section>
+
+<!-- PRODUK -->
+<section id="produk" class="produk">
+<h2>Produk Kami</h2>
+
+<div class="card-container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="">
+<h3>Kopi Arabica</h3>
+<p>Rasa halus dengan aroma fruity.</p>
+<span class="price">Rp 85.000</span>
+<button class="btn-beli">Beli Sekarang</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="">
+<h3>Kopi Robusta</h3>
+<p>Rasa kuat dan bold.</p>
+<span class="price">Rp 70.000</span>
+<button class="btn-beli">Beli Sekarang</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" alt="">
+<h3>Kopi Luwak</h3>
+<p>Kopi premium khas Indonesia.</p>
+<span class="price">Rp 250.000</span>
+<button class="btn-beli">Beli Sekarang</button>
+</div>
+
+</div>
+</section>
+
+<!-- MODAL PRODUK -->
+<div id="product-modal">
+<div class="modal-content">
+<span id="close-modal">&times;</span>
+<img id="modal-img">
+<h3 id="modal-name"></h3>
+<p id="modal-desc"></p>
+<span id="modal-price"></span>
+<button id="modal-beli" class="btn">Beli Sekarang</button>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer id="kontak">
+<p>📍 Hajoran julu,Labuhanbatu selatan</p>
+<p>📞 0813-7616-7831 pahmuddin siregar</p>
+<p>© 2026 Kopi Nusantara</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
