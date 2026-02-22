@@ -370,3 +370,59 @@ footer {
 footer p {
   margin: 5px 0;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .produk {
+    display: block;
+  }
+}
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+
+  /* Navbar jadi vertikal */
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* Produk jadi 1 kolom */
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .produk {
+    padding: 20px;
+  }
+
+  .btn-beli {
+    width: 100%;
+  }
+
+  /* Modal responsive */
+  .modal-content {
+    width: 95%;
+  }
+
+  /* Cart panel full di HP */
+  #cart {
+    width: 100%;
+  }
+}
